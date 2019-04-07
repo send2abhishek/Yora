@@ -1,0 +1,46 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+
+    package="com.example.abhishekaryan.yora">
+    
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-feature
+        android:name="android.hardware.camera"
+        />
+    <uses-feature android:name="android.hardware.camera.autofocus" />
+
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        android:name=".infrastructure.YoraApplication">
+
+        <activity android:name="com.example.abhishekaryan.activities.MainActivity" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name="com.example.abhishekaryan.activities.LoginActivity" />
+        <activity android:name="com.example.abhishekaryan.activities.LoginNarrowActivity" />
+        <activity android:name="com.example.abhishekaryan.activities.RegisterActivity" />
+        <activity android:name="com.example.abhishekaryan.activities.ExternalLoginActivity" />
+        <activity android:name="com.example.abhishekaryan.activities.sentMessageActivity" />
+        <activity android:name="com.example.abhishekaryan.activities.contactsActivity" />
+        <activity android:name="com.example.abhishekaryan.activities.profileActivity" />
+        <activity android:name="com.example.abhishekaryan.activities.ContactActivity" />
+        <activity android:name="com.example.abhishekaryan.activities.AddContactActivity"
+            android:theme="@style/AddContactTheme"/>
+        <activity android:name="com.example.abhishekaryan.activities.MessageActivity" />
+        <activity android:name="com.example.abhishekaryan.activities.SendMessageActivity" />
+        <activity android:name="com.example.abhishekaryan.activities.NewMessageActivity" />
+        <activity android:name="com.theartofdev.edmodo.cropper.CropImageActivity"
+            android:theme="@style/Base.Theme.AppCompat"/>
+        />
+     </application>
+
+</manifest>

@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Username"
+        android:layout_marginBottom="8dp"
+        android:id="@+id/fragment_login_username"
+        />
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Password"
+        android:inputType="textPassword"
+        android:layout_marginBottom="8dp"
+        android:layout_below="@id/fragment_login_username"
+        android:id="@+id/fragment_login_password"
+        />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#2196f3"
+        android:layout_below="@id/fragment_login_password"
+        android:text="Login"
+        android:textColor="#ffffff"
+        android:id="@+id/fragment_login_btn"
+        />
+
+    <ProgressBar
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/fragment_progressbar"
+        android:layout_alignTop="@id/fragment_login_btn"
+        android:layout_alignBottom="@id/fragment_login_btn"
+        android:layout_centerHorizontal="true"
+        android:indeterminateOnly="true"
+        android:visibility="gone"
+        style="?android:attr/progressBarStyleInverse"
+        />
+
+
+</RelativeLayout>
